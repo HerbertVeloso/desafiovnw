@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #f1f1f0;
+	padding-bottom: 10vh;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.header{
+	margin: 2vh 0;
+}
+.main{
+	width: 70vw;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+.content{
+	border: 1px solid #c5c7c8;
+	margin: 0.7vw;
+	padding: 2vw;
+	background: #fff;
+    box-shadow: 0px 0px 5px -1px;
+}
+.content--big{
+	width: 64%;
+}
+.content--medium{
+	width: 46%;
+}
+.content--small{
+	width: 32%;
+}
+.content--smaller{
+	width: 16%;
+}
+.row{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.half{
+	height: 100%;
+	width: 50%;
+	text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.half--left{
+    text-align: left;
+    align-items:flex-start; 
+}
+.title{
+	font-size: 2vw;
+}
+.text{
+	margin-top: 1.2vw;
+	font-size: 1.075vw;
+}
+.text--big{
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+.description{
+	font-size: 0.8vw;
+}
+.quote{
+	margin: 1vw 0;
+	font-size: 1.2vw;
+	font-style: italic;
+	line-height: 1.5vw;
+}
+.author{
+	margin: 1.5vw 0 0;
+    font-size: 1.1vw;
+    font-weight: 300;
+    text-align: right;
+}
+.subtitle{
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+.image--small{
+	width: 49%;
+}
+.image--medium{
+    width: 70%;
+    margin: 0 1vw;
+}
+.image--big{
+    width: 85%;
+    margin: 0 7.5%;
+}
+.list-title{
+    font-size: 1vw;
+    margin: 1vw 0 0.5vw;
+}
+.list{
+    list-style: none;
+    font-size: 0.9vw;
+}
+.list--hyphen li:before {
+  content: "-";
+  margin: 0 2px;
+ }
+.link{ 
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+@media (max-width: 720px){
+	.header{
+		margin: 5vh 0;
+	}
+	.main{
+		width: 90vw;
+	}
+	.content{
+		width: 100%;
+		padding: 5vw;
+		margin: 2vw 0;
+	}
+	.title{
+		font-size: 6.5vw;
+	}
+	.text{
+		margin-top: 4vw;
+		font-size: 4.5vw;
+		line-height: 5.5vw;
+	}
+	.text--big{
+		font-size: 4vw;
+		line-height: 5vw;
+	}
+	.description{
+		font-size: 4vw;
+	}
+	.quote{
+		margin: 4vw 0;
+		font-size: 4.5vw;
+		line-height: 5vw;
+	}
+	.author{
+		font-size: 4vw;
+	}
+	.subtitle{
+		font-size: 5vw;
+		margin-bottom: 4vw;
+	}
+	.row{
+		flex-wrap: wrap;
+	}
+	.half--left{
+		width: 100%;
+	}
+	.image--medium{
+		margin-top: 4vw;
+		align-self: center;
+	}
+	.list-title{
+		margin: 4vw 0 2vw;
+		font-size: 4.5vw;
+	}
+	.list{
+		font-size: 4vw;
+	}
+	.link{
+		font-size: 4vw;
+		line-height: 8vw;
+	}
+}
